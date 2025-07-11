@@ -124,58 +124,68 @@
       }
     }
     .content {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .content h2 {
-      color: #003366;
-      border-left: 5px solid #2196f3;
-      padding-left: 10px;
-      font-size: 1.5em;
-    }
-    .content p {
-      font-size: 1.05em;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .partners {
-      display: flex;
-      gap: 32px;
-      margin-top: 24px;
-      flex-wrap: wrap;
-    }
-    .partners > div {
-      flex: 1 1 220px;
-      min-width: 200px;
-      background: #f2f6fb;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    .partners img {
-      max-width: 90px;
-      margin-bottom: 16px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .partners p {
-      margin-top: 0;
-      font-size: 1em;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-      font-size: 0.9em;
-    }
+  max-width: 900px;
+  margin: 40px auto 40px auto;
+  padding: 32px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers all direct children horizontally */
+}
+.content h2 {
+  color: #003366;
+  border-left: 5px solid #2196f3;
+  padding-left: 10px;
+  font-size: 1.5em;
+  align-self: flex-start;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.content p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.partners {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.partners > div {
+  flex: 1 1 220px;
+  min-width: 200px;
+  background: #f2f6fb;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  max-width: 340px;
+}
+.partners img {
+  max-width: 90px;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners p {
+  margin-top: 0;
+  font-size: 1em;
+}
+
   </style>
 </head>
 <body>
